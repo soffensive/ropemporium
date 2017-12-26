@@ -41,7 +41,7 @@ payload += p32(data_section)
 
 
 
-io = process("./write432")
+io = e.process()
 
 
 io.sendline(payload)

